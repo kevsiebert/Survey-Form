@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl"></html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1 id="title">Survey Form</h1>
+<p class="description">Thank you for taking the time to help us improve the platform </p>
+
+<form id="survey-form">
+
+<label id="name-label">
+<p class="name">
+  <id="name">Name:
+  <input id="name" name="first-name" placeholder="name" value="name" type="text" required /></p></label>
+
+ <label id="email-label"><p class="email">Email:<input id="email" name="email" type="email"  placeholder="email" required /><p></label>
+
+  <label id="phonenumber-label" pattern:[0-9]{3}-[0-9]{2}-[0-9]{3} ><p class="phone">Phone number <input id="phone" name="email" type="email"  placeholder="000-000-0000" required /></label>
+
+<label id="number-label">Number
+<input id="number" placeholder="12" type="number" min="8" max="12"></label>
+
+<label for="dropdown">Which option best describes your current role?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Full time job</option>
+            <option value="3">part time job</option>
+            <option value="4">not to answer</option>
+          </select>
+
+<p>Would you recommend us to a friend</p>
+
+<label>
+
+ <label for="yes"><input id="yes" type="radio" name="recommend" class="inline" value="yes" /> Yes</label>
+
+<label for="no"><input id="no" type="radio" name="recommend" class="inline" value="no" /> No</label>
+
+<p>What would you like to see improved?</p>
+
+<label for="quizes" name="quizes">
+          <input id="quizes" type="checkbox" required name="quizes" value="quiz" class="inline" /> Quizes</a>
+        </label>
+
+<label for="forum" name="forum">
+          <input id="forum" type="checkbox" required name="forum" value="forum" class="inline" /> Forum</a>
+        </label>
+
+<p>Any comments or suggestions?</p>
+
+ <label for="bio">
+<textarea id="suggest" name="suggest" rows="3" cols="30" placeholder="any comments..."></textarea>
+        </label>
+
+<input id="submit"
+type="submit" value="Submit" />
+
+</form>
+</body>
